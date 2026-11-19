@@ -170,6 +170,10 @@ homekit:
               description: The `entity_id` of a `sensor` entity to use as the humidity sensor of the humidifier/dehumidifier accessory.
               required: false
               type: string
+            linked_pm1_sensor:
+              description: The `entity_id` of a `sensor` entity to use for PM1 density on the air purifier accessory. HomeKit has no PM1 density characteristic, so PM1 is exposed as a separate air quality sensor named PM1, using the generic particulate density and rated on the PM2.5 scale.
+              required: false
+              type: string
             linked_pm10_sensor:
               description: The `entity_id` of a `sensor` entity to use for PM10 density on the air purifier accessory. When both PM2.5 and PM10 are linked, the accessory reports both densities and uses the worse of the two for its air quality rating.
               required: false
