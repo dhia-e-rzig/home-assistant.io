@@ -171,7 +171,7 @@ homekit:
               required: false
               type: string
             linked_pm10_sensor:
-              description: The `entity_id` of a `sensor` entity to use for PM10 density on the air purifier accessory. When both PM2.5 and PM10 are linked, the accessory reports both densities and uses PM2.5 for its air quality rating.
+              description: The `entity_id` of a `sensor` entity to use for PM10 density on the air purifier accessory. When both PM2.5 and PM10 are linked, the accessory reports both densities and uses the worse of the two for its air quality rating.
               required: false
               type: string
             linked_pm25_sensor:
